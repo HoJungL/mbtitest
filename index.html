@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MBTI 테스트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="start-screen" class="screen">
+      <div class="card">
+        <h1>MBTI 테스트</h1>
+        <img src="logo.png" alt="로고 이미지" />
+        <p>MBTI 질문은 총 32문항입니다. 시작하기 버튼을 눌러주세요.</p>
+        <button id="start-button">시작하기</button>
+      </div>
+    </div>
+
+    <div id="question-screen" class="screen">
+      <div class="card">
+        <div id="question-counter">Question 1 of 30</div>
+        <p id="question">질문 내용</p>
+        <div class="answer-buttons">
+          <button class="answer-button" data-value="-2">매우 아니다</button>
+          <button class="answer-button" data-value="-1">아니다</button>
+          <button class="answer-button" data-value="0">모르겠다</button>
+          <button class="answer-button" data-value="1">그렇다</button>
+          <button class="answer-button" data-value="2">매우 그렇다</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="result-screen" class="screen">
+      <div class="card">
+        <h2 id="result-type">MBTI 유형</h2>
+        <img id="result-image" src="character.png" alt="캐릭터 이미지" />
+        <div id="result-role">연관 직업</div>
+        <div id="result-description">MBTI 유형에 대한 설명</div>
+        <div id="result-mate">어울리는 MBTI유형</div>
+        <button id="restart-button">다시하기</button>
+        <button id="share-button">공유하기</button>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
